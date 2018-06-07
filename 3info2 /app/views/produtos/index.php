@@ -19,7 +19,11 @@
             $("." +idAba).toggle(300);
 
         });
-
+        //
+        // $("#conteudos").click(function () {
+        //     $("#descricao").show();
+        // });
+        //
     });
 
 </script>
@@ -45,9 +49,11 @@
 
 </div>
 
-<br>
-
-<div>
-
-</div>
-
+<!--<div id="descricao">-->
+<!--    --><?php //foreach ($produtos as $produto) : ?>
+<!--        <div class="descricaocat--><?//= $produto->getDescricao(); ?><!--">-->
+<!---->
+<!--        </div>-->
+<!--    --><?php //endforeach; ?>
+<!---->
+<!--</div>-->
