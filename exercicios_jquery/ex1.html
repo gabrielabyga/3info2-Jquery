@@ -6,12 +6,16 @@
     <style>
         .azul{
             color: blue;
+
         }
         .vermelho{
             color: red;
         }
         .importante{
             font-weight: bold;
+        }
+        .roxo{
+            color: deeppink;
         }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -55,8 +59,89 @@
 
             });
             $("#bt9").click(function () {
-                $("img") .attr ("apagada.jpg");
+                $("img").attr("src","apagada.jpg");
 
+            });
+
+            $("#bt10").click(function () {
+                $("ol").append("4.Quarto");
+
+            });
+            $("#bt11").click(function () {
+                $("ol").prepend("0.Zero");
+
+            });
+            $("#bt12").click(function () {
+                $("#paragrafo1").prepend("3INFO2");
+
+            });
+
+            $("#bt13").click(function () {
+                $("#paragrafo2").append("3INFO2");
+
+            });
+            $("#bt14").click(function () {
+                $("header").remove("");
+
+            });
+            $("#bt15").click(function () {
+                $("#conteudo-principal").empty("");
+
+            });
+            $("#bt16").click(function () {
+                $("p").remove("#paragrafo1, #paragrafo2");
+
+            });
+
+            $("#bt17").click(function () {
+                $("p").remove("#paragrafo1, #paragrafo2, .outro");
+
+            });
+
+            $("#bt18").click(function () {
+                $("#paragrafo1").addClass("azul");
+
+            });
+            $("#bt19").click(function () {
+                $("#paragrafo2").addClass("vermelho", "importante");
+            });
+            $("#bt20").click(function () {
+                $("#paragrafo1").removeClass("azul");
+            });
+
+            $("#bt21").click(function () {
+                $("#paragrafo2").toggleClass("importante");
+            });
+
+            $("#bt22").click(function () {
+                $("#paragrafo3").css("background-color", "purple");
+            });
+            $("#bt23").click(function () {
+                $("header").css("border","dotted");
+            });
+            $("#bt24").click(function () {
+                var txt = $("header").css("background-color", "purple");
+                alert(txt)
+            });
+            $("#bt25").click(function () {
+                $("#paragrafo2").css({"background-color": "purple", "color": "white", "font-size": "25px", "padding": "15px"});
+            });
+            $("#bt26").click(function () {
+                var txt = $("input").css("padding");
+                alert(txt)
+            });
+            $("#bt27").click(function () {
+                var txt = $("#paragrafo1").css("height");
+                alert(txt)
+            });
+            $("#bt28").click(function () {
+                $("#paragrafo3").parent().attr("style","border-style: dotted;");
+            });
+            $("#bt29").click(function () {
+                $("span").parents().attr("style","border-style: dotted;");
+            });
+            $("#bt30").click(function () {
+                $("h1").children().attr("style","border-style: dotted;");
             });
 
         });
@@ -82,7 +167,7 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores corporis deserunt dolor dolorem harum hic, illum iste, labore minima necessitatibus sed similique, ut. Expedita impedit ipsa iure nihil nulla.
         </p>
 
-        <p class="outro">
+        <p class="outro" id="paragrafo3">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda cum, cupiditate deleniti eaque iusto magnam quae quos sunt suscipit? Asperiores ducimus earum, necessitatibus nisi perspiciatis praesentium quia sunt temporibus.
         </p>
         <a href="http://ifc.edu.br" id="link1">IFC</a> <br>
